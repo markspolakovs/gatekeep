@@ -46,7 +46,6 @@
     "validate"
   ],
   "dependencies": {
-    "app-root-path": "^1.2.1",
     "chalk": "^1.1.1",
     "meow": "^3.7.0"
   },
