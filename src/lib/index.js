@@ -4,5 +4,4 @@
  * @return {Type}
  */
 export default function() {
-  // return true;
 }
