@@ -34,7 +34,8 @@
     "pp": "npm run prepare",
     "major": "pmm major",
     "minor": "pmm minor",
-    "patch": "pmm patch"
+    "patch": "pmm patch",
+    "link": "npm run build && npm link"
   },
   "author": {
     "name": "Marks Polakovs",
@@ -45,8 +46,9 @@
     "validate"
   ],
   "dependencies": {
-    "meow": "^3.7.0",
-    "chalk": "^1.1.1"
+    "app-root-path": "^1.2.1",
+    "chalk": "^1.1.1",
+    "meow": "^3.7.0"
   },
   "devDependencies": {
     "babel-cli": "^6.5.1",

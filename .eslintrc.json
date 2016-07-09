@@ -28,7 +28,6 @@
     // possible errors
     "comma-dangle": [2, "never"],
     "no-cond-assign": [2, "always"],
-    "no-console": [2],
     "no-constant-condition": [2],
     "no-control-regex": [2],
     "no-debugger": [2],
@@ -111,7 +110,6 @@
     "no-self-assign": [2],
     "no-self-compare": [2],
     "no-sequences": [2],
-    "no-throw-literal": [2],
     "no-unmodified-loop-condition": [2],
     "no-unused-expressions": [2, { "allowShortCircuit": true }],
     "no-unused-labels": [2],
@@ -147,7 +145,6 @@
     "no-mixed-requires": [2],
     "no-new-require": [2],
     "no-path-concat": [2],
-    "no-process-exit": [2],
     "no-restricted-imports": [0],
     "no-restricted-modules": [0],
     "no-sync": [0],
@@ -167,7 +164,7 @@
     "eol-last": [2],
     "func-names": [0],
     "func-style": [0],
-    "indent": [2, 2, { "SwitchCase": 1 }],
+    "indent": [2, 2],
     "jsx-quotes": [2, "prefer-single"],
     "key-spacing": [2, {
       "beforeColon": false,

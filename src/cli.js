@@ -1,27 +1,40 @@
 #! /usr/bin/env node
 
 import meow from 'meow';
-import gatekeep from './lib/';
+import {init} from './commands/init';
 
 const cli = meow({
-  help: [
-    'Usage',
-    '  $ gatekeep [input]',
-    '',
-    'Options',
-    '  --foo  Lorem ipsum. [Default: false]',
-    '',
-    'Examples',
-    '  $ gatekeep',
-    '  unicorns & rainbows',
-    '  $ gatekeep ponies',
-    '  ponies & rainbows'
-  ]
+  help: `
+    Usage
+      $ gatekeep [command] [input]
+    
+    Commands
+      init
+        Initialize a new, default Gatefile
+        Options:
+          --es6: Output new Gatefile for an ES6 project
+
+    Examples:
+    $ gatekeep init
+`
 });
 
 const input = cli.input || [];
 const flags = cli.flags || {};
 
-console.log(cli.help); // eslint-disable-line
+if (!input[0]) {
+  console.log(cli.help);
+  process.exit(1); // eslint-disable-line
+}
 
-gatekeep(input, flags);
+switch (input[0].toLowerCase()) { // command
+case 'init':
+  {
+    init(input.slice(1), flags); //eslint-disable-line
+    break;
+  }
+default:
+  {
+    console.log(cli.help);
+  }
+}
