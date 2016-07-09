@@ -16,7 +16,7 @@ export class SecretResolver {
     }
 
     for (const gen of secret.sources) {
-      const resolved = this.__resolveGenerator(gen);
+      const resolved = gen.call();
       if (resolved) {
         return resolved;
       }
@@ -24,32 +24,16 @@ export class SecretResolver {
     return undefined;
   }
 
-  __resolveGenerator(gen) {
-    switch (typeof gen) {
-      case 'function':
-        {
-          const secret = gen.call();
-          if (secret) {
-            return secret;
-          }
-          return undefined;
-
-        }
-      default:
-        {
-          if (gen) {
-            return gen;
-          }
-          return undefined;
-        }
-    }
-  }
-
   __getConfigBool(name) {
     return this.config.hasOwnProperty('resolver')
       && this.config.resolver.hasOwnProperty(name)
       && this.config.resolver[name];
   }
+
+  /** Resolves the secrets in a Gatefile to their environment variable, user-overriden, or generated equivalents.
+    *
+    *
+    */
 
   resolve(secrets) {
     const result = {};
@@ -61,7 +45,6 @@ export class SecretResolver {
         throw new SecretUnresolvedError(`Could not resolve secret ${name}`);
       } else {
         result[name] = undefined;
-
       }
     }
     return result;
