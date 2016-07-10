@@ -6,6 +6,8 @@
 [![travis-status](https://img.shields.io/travis/markspolakovs/gatekeep.svg)](https://travis-ci.org/markspolakovs/gatekeep)
 [![Code Climate](https://codeclimate.com/github/markspolakovs/gatekeep/badges/gpa.svg)](https://codeclimate.com/github/markspolakovs/gatekeep)
 [![Coverage Status](https://coveralls.io/repos/github/markspolakovs/gatekeep/badge.svg?branch=master)](https://coveralls.io/github/markspolakovs/gatekeep?branch=master)
+[![David](https://img.shields.io/david/markspolakovs/gatekeep.svg?maxAge=2592000)]()
+[![David](https://img.shields.io/david/dev/markspolakovs/gatekeep.svg?maxAge=2592000)]()
 [![commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 Secrets management for Node.js
