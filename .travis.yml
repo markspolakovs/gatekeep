@@ -3,6 +3,9 @@ node_js:
   - "4.4.7"
   - "5"
   - "6"
+addons:
+  code_climate:
+    repo_token: 24606b084a0f64ef3957cf65c53f0545eeb367a84eccfc0a1ca151383cde539a
 install:
   - npm install
 script:
@@ -10,4 +13,4 @@ script:
   - npm run build
   - npm run validate
 after_success:
-  - npm run coveralls
+  - npm run coveralls-climate
