@@ -60,7 +60,7 @@
     "babel-register": "^6.9.0",
     "babel-runtime": "^6.9.2",
     "chai": "^3.5.0",
-    "codeclimate-test-reporter": "^0.3.3",
+    "codeclimate-test-reporter": "^0.4.1",
     "coveralls": "^2.11.11",
     "cz-conventional-changelog": "^1.1.5",
     "eslint": "^3.0.1",
