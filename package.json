@@ -62,7 +62,7 @@
     "chai": "^3.5.0",
     "codeclimate-test-reporter": "^0.3.3",
     "coveralls": "^2.11.11",
-    "cz-conventional-changelog": "^1.1.5",
+    "cz-conventional-changelog": "^2.0.0",
     "eslint": "^3.0.1",
     "mocha": "^3.0.0",
     "nsp": "^2.2.0",
