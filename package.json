@@ -64,7 +64,7 @@
     "coveralls": "^2.11.11",
     "cz-conventional-changelog": "^1.1.5",
     "eslint": "^3.0.1",
-    "mocha": "^3.0.0",
+    "mocha": "^3.4.0",
     "nsp": "^2.2.0",
     "nyc": "^8.1.0",
     "pmm": "^1.3.0",
